@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Programming Club Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform </p>
+    </header>
+    <main>
+
+      <form action="" id="survey-form">
+        <fieldset>
+            <label id="name-label"> Name
+              <input type="text" id="name" placeholder="Enter your name" required>
+            </label>
+            <label id="email-label"> Email
+              <input type="email" id="email" placeholder="Enter your email" required>
+            </label>
+            <label id="number-label"> Age(optional)
+            <input type="number" id="number" placeholder="Enter your age" min="18" max="50">
+            </label>
+        </fieldset>
+        <fieldset> 
+          <legend>Would you recommend Programming Club to a friend?</legend>
+          <label for="">
+            <input type="radio" name="recommendation" value="definitely" class="inline"> Definitely
+          </label><label for="">
+            <input type="radio" name="recommendation" value="maybe" class="inline"> Maybe
+          </label><label for="">
+            <input type="radio" name="recommendation" value="not sure" class="inline"> Not sure
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>What is your favorite feature of Programming Club?</legend>
+          <label for="">
+            <select name="" id="dropdown">
+              <option value="">Select an option</option>
+              <option value="challenges">Challenges</option>
+              <option value="projects">Projects</option>
+              <option value="community">Community</option>
+              <option value="opensource">Open-source</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>What would you like to see improved? (Check all that apply)</legend>
+          <label for="">
+            <input type="checkbox" value="fdproject" name="suggestion"> Front-end Projects
+          </label>
+          <label for="">
+            <input type="checkbox" value="bdproject" name="suggestion"> Back-end Projects
+          </label>
+          <label for="">
+            <input type="checkbox" value="dv" name="suggestion"> Data Visualization
+          </label>
+          <label for="">
+            <input type="checkbox" value="chlng" name="suggestion"> Challenges
+          </label>
+          <label for="">
+            <input type="checkbox" value="osc" name="suggestion"> Open-source Community
+          </label><label for="">
+            <input type="checkbox" value="videos" name="suggestion"> Videos
+          </label>
+          <label for="">
+            <input type="checkbox" value="cmeet" name="suggestion"> City Meetups
+          </label>
+          <label for="">
+            <input type="checkbox" value="wiki" name="suggestion"> Wiki
+          </label>
+          <label for="">
+            <input type="checkbox" value="forum" name="suggestion"> Forums
+          </label>
+          <label for="">
+            <input type="checkbox" value="adcourses" name="suggestion"> Additional Courses
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Any comments or suggestions?</legend>
+          <textarea name="" id="" cols="50" rows="10" placeholder="Enter your comment here..."></textarea>
+        </fieldset>
+        <fieldset>
+          <button id="submit" type="submit">Submit</button>
+        </fieldset>
+       
+      
+        
+      </form>
+      </main>
+</body>
+</html>
